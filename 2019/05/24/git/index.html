@@ -6,19 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>小艾的第一篇博客 | Hexo</title>
+  <title>git | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Hello Word">
+  <meta name="description" content="git的基础命令">
+<meta name="keywords" content="Git">
 <meta property="og:type" content="article">
-<meta property="og:title" content="小艾的第一篇博客">
-<meta property="og:url" content="http://yoursite.com/2019/05/06/xa-first-blog/index.html">
+<meta property="og:title" content="git">
+<meta property="og:url" content="http://yoursite.com/2019/05/24/git/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Hello Word">
+<meta property="og:description" content="git的基础命令">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-06-24T05:32:47.293Z">
+<meta property="og:image" content="http://yoursite.com/clipboard.png">
+<meta property="og:updated_time" content="2019-06-24T05:52:10.558Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="小艾的第一篇博客">
-<meta name="twitter:description" content="Hello Word">
+<meta name="twitter:title" content="git">
+<meta name="twitter:description" content="git的基础命令">
+<meta name="twitter:image" content="http://yoursite.com/clipboard.png">
   
   
     <link rel="icon" href="/favicon.png">
@@ -142,27 +145,34 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-xa-first-blog" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-git" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      小艾的第一篇博客
+      git
     </h1>
   
 
         
-        <a href="/2019/05/06/xa-first-blog/" class="archive-article-date">
-  	<time datetime="2019-05-06T12:27:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-06</time>
+        <a href="/2019/05/24/git/" class="archive-article-date">
+  	<time datetime="2019-05-24T05:32:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-24</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><strong> Hello Word </strong></p>
+        <h1 id="Git基础命令"><a href="#Git基础命令" class="headerlink" title="Git基础命令"></a>Git基础命令</h1><p>   1.git branch 查看分支<br>   2.git branch dev  创建dev分支<br>   3.git checkout dev 切换到dev分支<br><a id="more"></a><br>   4.git clone -b  XXX 拉取指定分支的内容<br>   5.git clone -b test httb…… 拉取test分支</p>
+<h1 id="发布dev分支"><a href="#发布dev分支" class="headerlink" title="发布dev分支"></a>发布dev分支</h1><p>   1.发布dev分支指的是同步dev分支的代码到远程服务器<br>   2.git push origin dev:dev  # 这样远程仓库也有一个dev分支了</p>
+<h1 id="Git删除分支"><a href="#Git删除分支" class="headerlink" title="Git删除分支"></a>Git删除分支</h1><p>   git push origin :dev  # 删除远程dev分支，危险命令哦</p>
+<h1 id="下面两条是删除本地分支"><a href="#下面两条是删除本地分支" class="headerlink" title="下面两条是删除本地分支"></a>下面两条是删除本地分支</h1><p>   1.git checkout master  # 切换到master分支<br>   2.git branch -d dev  # 删除本地dev分支</p>
+<h1 id="切换历史版本"><a href="#切换历史版本" class="headerlink" title="切换历史版本"></a>切换历史版本</h1><p>   1.Git log 查看日志<br>   2.Git log –oneline 一行显示<br>   3.Git reset –hard 版本号</p>
+<h1 id="关联分支"><a href="#关联分支" class="headerlink" title="关联分支"></a>关联分支</h1><ul>
+<li>git push –set-upstream origin wangxiao<br><img src="/clipboard.png" alt="eg"></li>
+</ul>
 
       
 
@@ -171,6 +181,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Git</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -221,7 +242,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/05/06/xa-first-blog/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/05/24/git/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -235,15 +256,20 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/05/24/git/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/06/14/sh/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          git
+          使用create-react-app创建项目，执行yarn eject报错
         
       </div>
     </a>
   
+  
+    <a href="/2019/05/06/xa-first-blog/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">小艾的第一篇博客</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
